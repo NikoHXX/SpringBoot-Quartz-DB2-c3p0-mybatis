@@ -1,0 +1,7 @@
+<project>
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.ibm</groupId>
+<artifactId>db2jcc</artifactId>
+<version>9</version>
+<description>POM was created from install:install-file</description>
+</project>

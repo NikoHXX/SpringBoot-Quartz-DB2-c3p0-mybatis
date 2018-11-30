@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hxxzt.dao.ITestDao">
+
+    <resultMap id="Test" type="com.hxxzt.entity.Test">
+        <result column="ID" property="ID" jdbcType="INTEGER"/>
+        <result column="NAME" property="NAME" jdbcType="VARCHAR"/>
+        <result column="TIME" property="TIME" jdbcType="DATE"/>
+    </resultMap>
+
+    <select id="All" resultMap="Test" parameterType="java.util.List">
+    SELECT * FROM QUARTZ.TEST
+    </select>
+
+    <select id="findById" resultMap="Test">
+        SELECT * FROM QUARTZ.TEST WHERE ID = #{ID}
+    </select>
+
+
+</mapper>
