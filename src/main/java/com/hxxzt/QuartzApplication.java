@@ -8,10 +8,10 @@ import org.springframework.context.annotation.ComponentScan;
 @MapperScan("com.hxxzt.dao")
 @SpringBootApplication
 @ComponentScan(basePackages = {"com"})
-public class DemoApplication {
+public class QuartzApplication {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(QuartzApplication.class, args);
     }
 }
